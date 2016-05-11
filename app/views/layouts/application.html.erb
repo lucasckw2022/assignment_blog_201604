@@ -7,10 +7,47 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%= link_to('home',home_path)%>
-<%= link_to('about', about_path)%>
-<hr>
-<%= yield %>
-
+<nav class="navbar-default">
+  <div class="container-fluid">
+    <!--this is the dropdown button-->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="
+          glyphicon glyphicon-leaf"></span>
+      </button>
+    </div>
+    <!--this is the menu-->
+    <div class="collapse navbar-collapse" id="mobile-nav">
+      <ul class="nav navbar-nav">
+        <li><%= link_to('Home',home_path)%></li>
+        <li><%= link_to('About', about_path)%></li>
+        <li><%= link_to 'All Post', posts_path %></li>
+        <li><%= link_to 'New Post', new_post_path%></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <% if session[:user_id]%>
+        <li><%= link_to "#{current_user.first_name}", edit_user_path(session[:user_id])%></li>
+        <li><%= link_to 'Sign Out', sessions_path, method: :delete, data:{confirm: "Are you sure?"}%></li>
+        <% else%>
+        <li><%= link_to 'Sign In', new_session_path%></li>
+        <li><%= link_to 'Sign Up', new_user_path%></li>
+        <%end%>
+      </ul>
+    </div>
+  </div>
+</nav>
+<%if alert%>
+  <div class="alert alert-danger" role="alert">
+    <%=alert%>
+  </div>
+  <%elsif notice%>
+  <div class="alert alert-success" role="alert">
+    <%=notice%>
+  </div>
+<%end%>
+  <div class="container">
+    <%= yield %>
+  </div>
 </body>
 </html>
