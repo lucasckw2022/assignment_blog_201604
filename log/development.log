@@ -37520,3 +37520,459 @@ Processing by Api::V1::PostsController#index as HTML
   [1m[35mTag Load (7.6ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."post_id" = $1  [["post_id", 1]]
   [1m[36mLike Load (2.7ms)[0m  [1mSELECT "likes".* FROM "likes" WHERE "likes"."post_id" = $1[0m  [["post_id", 1]]
 Completed 200 OK in 551ms (Views: 368.6ms | ActiveRecord: 157.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-11 17:14:28 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 1453ms (Views: 1425.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api/v1/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 17:14:31 -0700
+
+
+Started GET "/assets/bootstrap_overwrite.self-66023e4aaea5be97232c3514496d8952b8ca6d15c7e68c402067a0192c56f7f6.css?body=1" for 127.0.0.1 at 2016-05-11 17:14:31 -0700
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 17:14:31 -0700
+
+
+Started GET "/assets/likes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 17:14:31 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-11 17:14:32 -0700
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 17:14:32 -0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 17:14:32 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 17:14:32 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 17:14:32 -0700
+
+
+Started GET "/assets/application.self-77e42128e325b1f78070ff784f247ff296c3bd62d8ea6021adb0e70ef3c7fef0.css?body=1" for 127.0.0.1 at 2016-05-11 17:14:32 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-11 17:14:32 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-11 17:14:32 -0700
+
+
+Started GET "/assets/api/v1/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 17:14:32 -0700
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-05-11 17:14:32 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 17:14:32 -0700
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 17:14:32 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-05-11 17:14:32 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 17:14:32 -0700
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 17:14:32 -0700
+
+
+Started GET "/assets/likes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 17:14:32 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 17:14:32 -0700
+
+
+Started GET "/posts" for 127.0.0.1 at 2016-05-11 17:14:38 -0700
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (21.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (85.3ms)
+Completed 200 OK in 209ms (Views: 77.9ms | ActiveRecord: 79.3ms)
+
+
+Started GET "/posts/16" for 127.0.0.1 at 2016-05-11 17:14:41 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 16]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", "16"]]
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (2.2ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."post_id" = $1  [["post_id", 16]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "likes" WHERE "likes"."post_id" = $1[0m  [["post_id", 16]]
+  Rendered likes/_like.html.erb (32.6ms)
+  [1m[35mComment Load (35.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 16]]
+  Rendered posts/show.html.erb within layouts/application (874.8ms)
+Completed 200 OK in 1119ms (Views: 958.2ms | ActiveRecord: 83.8ms)
+
+
+Started POST "/posts/16/comments" for 127.0.0.1 at 2016-05-11 17:14:49 -0700
+
+SyntaxError (/home/lucas/Codecore/project1/blog/app/controllers/comments_controller.rb:40: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/comments_controller.rb:40: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /home/lucas/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /home/lucas/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/lucas/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/lucas/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.9ms)
+  Rendered /home/lucas/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/lucas/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/lucas/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/lucas/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/lucas/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (28.5ms)
+  Rendered /home/lucas/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/lucas/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/lucas/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (78.3ms)
+
+
+Started POST "/posts/16/comments" for 127.0.0.1 at 2016-05-11 17:16:18 -0700
+
+SyntaxError (/home/lucas/Codecore/project1/blog/app/controllers/comments_controller.rb:41: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/comments_controller.rb:41: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /home/lucas/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.9ms)
+  Rendered /home/lucas/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/lucas/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/lucas/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (38.8ms)
+  Rendered /home/lucas/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/lucas/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/lucas/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/lucas/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/lucas/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (24.6ms)
+  Rendered /home/lucas/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/lucas/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.2ms)
+  Rendered /home/lucas/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (60.2ms)
+
+
+Started POST "/posts/16/comments" for 127.0.0.1 at 2016-05-11 17:16:42 -0700
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/xOtsQBVHNKwig53O0LpRIxqtnSwSVoi66xZoboK3yk+IVbdHxOZsPRAQz7m4U9oeLT76Py5IINlmjiPlFZWug==", "comment"=>{"body"=>"hello"}, "commit"=>"Create Comment", "post_id"=>"16"}
+Redirected to http://localhost:3000/
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-11 17:16:42 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 104ms (Views: 86.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/api/v1/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 17:16:43 -0700
+
+
+Started GET "/assets/bootstrap_overwrite.self-66023e4aaea5be97232c3514496d8952b8ca6d15c7e68c402067a0192c56f7f6.css?body=1" for 127.0.0.1 at 2016-05-11 17:16:43 -0700
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 17:16:43 -0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 17:16:43 -0700
+
+
+Started GET "/assets/likes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 17:16:43 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 17:16:43 -0700
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 17:16:43 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-11 17:16:43 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-11 17:16:43 -0700
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-05-11 17:16:43 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-11 17:16:44 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-11 17:16:44 -0700
+
+
+Started GET "/assets/application.self-77e42128e325b1f78070ff784f247ff296c3bd62d8ea6021adb0e70ef3c7fef0.css?body=1" for 127.0.0.1 at 2016-05-11 17:16:44 -0700
+
+
+Started GET "/assets/api/v1/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 17:16:44 -0700
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 17:16:44 -0700
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 17:16:44 -0700
+
+
+Started GET "/assets/likes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 17:16:44 -0700
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 17:16:44 -0700
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 17:16:44 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-05-11 17:16:44 -0700
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-11 17:16:44 -0700
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2016-05-11 17:16:47 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 44ms (Views: 43.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2016-05-11 17:16:51 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cPihvo1u+EDOelMYHw4l7aFv4IHhvmdxn9nMhe+k0f+xylrSkih9IoqwHlHCrYPBVbGtHa1OHdAR762rwfhYbA==", "email"=>"test@test.com", "password"=>"[FILTERED]", "commit"=>"Sign In"}
+  [1m[36mUser Load (9.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "test@test.com"]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 214ms (ActiveRecord: 13.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-11 17:16:51 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 75ms (Views: 73.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2016-05-11 17:16:54 -0700
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (5.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 101ms (Views: 47.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/posts/16" for 127.0.0.1 at 2016-05-11 17:16:56 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 16]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", "16"]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (0.4ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."post_id" = $1  [["post_id", 16]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mLike Load (0.7ms)[0m  SELECT  "likes".* FROM "likes" WHERE "likes"."post_id" = $1 AND "likes"."user_id" = 1 LIMIT 1  [["post_id", 16]]
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "likes" WHERE "likes"."post_id" = $1[0m  [["post_id", 16]]
+  Rendered likes/_like.html.erb (35.7ms)
+  [1m[35mComment Load (0.9ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 16]]
+  Rendered posts/show.html.erb within layouts/application (138.8ms)
+Completed 200 OK in 403ms (Views: 210.1ms | ActiveRecord: 8.6ms)
+
+
+Started POST "/posts/16/comments" for 127.0.0.1 at 2016-05-11 17:17:02 -0700
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G0UL938F25/aseKgWrH3uEqb/DOgtg3O38RlCVNvr77ad/CbYENe/Z57r+mHElGUvkWxr+xGd29R8gQnfTMmLQ==", "comment"=>{"body"=>"hello"}, "commit"=>"Create Comment", "post_id"=>"16"}
+  [1m[36mPost Load (1.5ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 16]]
+  [1m[35mUser Load (4.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mComment Exists (25.9ms)[0m  SELECT  1 AS one FROM "comments" WHERE "comments"."body" = 'hello' LIMIT 1
+  [1m[36mSQL (153.6ms)[0m  [1mINSERT INTO "comments" ("body", "post_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "hello"], ["post_id", 16], ["user_id", 1], ["created_at", "2016-05-12 00:17:02.215428"], ["updated_at", "2016-05-12 00:17:02.215428"]]
+  [1m[35m (79.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts/16
+Completed 302 Found in 306ms (ActiveRecord: 265.4ms)
+
+
+Started GET "/posts/16" for 127.0.0.1 at 2016-05-11 17:17:02 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mPost Load (2.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 16]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", "16"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (0.4ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."post_id" = $1  [["post_id", 16]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mLike Load (4.2ms)[0m  SELECT  "likes".* FROM "likes" WHERE "likes"."post_id" = $1 AND "likes"."user_id" = 1 LIMIT 1  [["post_id", 16]]
+  [1m[36m (1.2ms)[0m  [1mSELECT COUNT(*) FROM "likes" WHERE "likes"."post_id" = $1[0m  [["post_id", 16]]
+  Rendered likes/_like.html.erb (8.6ms)
+  [1m[35mComment Load (2.6ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 16]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered comments/_comment.html.erb (2.6ms)
+  Rendered posts/show.html.erb within layouts/application (49.4ms)
+Completed 200 OK in 157ms (Views: 143.3ms | ActiveRecord: 10.9ms)
+
+
+Started DELETE "/posts/16/comments/83" for 127.0.0.1 at 2016-05-11 17:17:07 -0700
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WBagDTf2J4lD4TYaiM/7lROap8XvWroNuodf1AZuO9aZJFthKLCi6wcre1NVbF2550TqWaOqwKw0sT76KDKyRQ==", "post_id"=>"16", "id"=>"83"}
+  [1m[35mPost Load (1.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 16]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT  "comments".* FROM "comments" WHERE "comments"."post_id" = $1 AND "comments"."id" = $2 LIMIT 1[0m  [["post_id", 16], ["id", 83]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", "16"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "comments".* FROM "comments" WHERE "comments"."post_id" = $1 AND "comments"."id" = $2 LIMIT 1[0m  [["post_id", 16], ["id", "83"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 83]]
+  [1m[35m (1.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts/16
+Completed 302 Found in 20ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/posts/16" for 127.0.0.1 at 2016-05-11 17:17:07 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mPost Load (1.5ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 16]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", "16"]]
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (2.6ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."post_id" = $1  [["post_id", 16]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mLike Load (1.2ms)[0m  SELECT  "likes".* FROM "likes" WHERE "likes"."post_id" = $1 AND "likes"."user_id" = 1 LIMIT 1  [["post_id", 16]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "likes" WHERE "likes"."post_id" = $1[0m  [["post_id", 16]]
+  Rendered likes/_like.html.erb (4.6ms)
+  [1m[35mComment Load (1.8ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 16]]
+  Rendered posts/show.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 118ms (Views: 107.1ms | ActiveRecord: 9.5ms)
+
+
+Started POST "/posts/16/comments" for 127.0.0.1 at 2016-05-11 17:17:18 -0700
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+tiEgz/t3aCEqw0Hy+gu+fDWmxo7TjYEkAuY4JjVVe076n/vIKtYwsBhQE4WS4jVBAjWhne+TKUePfnOtoncfg==", "comment"=>{"body"=>"hello"}, "commit"=>"Create Comment", "post_id"=>"16"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 16]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mComment Exists (0.2ms)[0m  SELECT  1 AS one FROM "comments" WHERE "comments"."body" = 'hello' LIMIT 1
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "comments" ("body", "post_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["body", "hello"], ["post_id", 16], ["user_id", 1], ["created_at", "2016-05-12 00:17:18.587866"], ["updated_at", "2016-05-12 00:17:18.587866"]]
+  [1m[35m (11.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts/16
+Completed 302 Found in 19ms (ActiveRecord: 14.2ms)
+
+
+Started GET "/posts/16" for 127.0.0.1 at 2016-05-11 17:17:18 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 16]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", "16"]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (1.2ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."post_id" = $1  [["post_id", 16]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mLike Load (1.5ms)[0m  SELECT  "likes".* FROM "likes" WHERE "likes"."post_id" = $1 AND "likes"."user_id" = 1 LIMIT 1  [["post_id", 16]]
+  [1m[36m (2.3ms)[0m  [1mSELECT COUNT(*) FROM "likes" WHERE "likes"."post_id" = $1[0m  [["post_id", 16]]
+  Rendered likes/_like.html.erb (5.5ms)
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 16]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered comments/_comment.html.erb (1.8ms)
+  Rendered posts/show.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 154ms (Views: 146.1ms | ActiveRecord: 6.1ms)
+
+
+Started POST "/posts/16/likes" for 127.0.0.1 at 2016-05-11 17:17:24 -0700
+Processing by LikesController#create as JS
+  Parameters: {"post_id"=>"16"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 16]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (43.8ms)[0m  [1mINSERT INTO "likes" ("post_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["post_id", 16], ["user_id", 1], ["created_at", "2016-05-12 00:17:24.169415"], ["updated_at", "2016-05-12 00:17:24.169415"]]
+  [1m[35m (23.4ms)[0m  COMMIT
+  [1m[36mLike Load (0.5ms)[0m  [1mSELECT  "likes".* FROM "likes" WHERE "likes"."post_id" = $1 AND "likes"."user_id" = 1 LIMIT 1[0m  [["post_id", 16]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "likes" WHERE "likes"."post_id" = $1  [["post_id", 16]]
+  Rendered likes/_like.html.erb (6.8ms)
+  Rendered likes/create.js.erb (9.1ms)
+Completed 200 OK in 116ms (Views: 36.3ms | ActiveRecord: 68.9ms)
+
+
+Started DELETE "/posts/16/likes/36" for 127.0.0.1 at 2016-05-11 17:17:25 -0700
+Processing by LikesController#destroy as JS
+  Parameters: {"post_id"=>"16", "id"=>"36"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 16]]
+  [1m[35mLike Load (0.2ms)[0m  SELECT  "likes".* FROM "likes" WHERE "likes"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "likes" WHERE "likes"."id" = $1  [["id", 36]]
+  [1m[36m (17.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (1.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mLike Load (0.3ms)[0m  [1mSELECT  "likes".* FROM "likes" WHERE "likes"."post_id" = $1 AND "likes"."user_id" = 1 LIMIT 1[0m  [["post_id", 16]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "likes" WHERE "likes"."post_id" = $1  [["post_id", 16]]
+  Rendered likes/_like.html.erb (5.5ms)
+  Rendered likes/destroy.js.erb (6.7ms)
+Completed 200 OK in 31ms (Views: 6.8ms | ActiveRecord: 20.8ms)
+
+
+Started POST "/posts/16/likes" for 127.0.0.1 at 2016-05-11 17:17:26 -0700
+Processing by LikesController#create as JS
+  Parameters: {"post_id"=>"16"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 16]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "likes" ("post_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["post_id", 16], ["user_id", 1], ["created_at", "2016-05-12 00:17:26.580373"], ["updated_at", "2016-05-12 00:17:26.580373"]]
+  [1m[36m (38.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mLike Load (0.2ms)[0m  SELECT  "likes".* FROM "likes" WHERE "likes"."post_id" = $1 AND "likes"."user_id" = 1 LIMIT 1  [["post_id", 16]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "likes" WHERE "likes"."post_id" = $1[0m  [["post_id", 16]]
+  Rendered likes/_like.html.erb (3.1ms)
+  Rendered likes/create.js.erb (3.8ms)
+Completed 200 OK in 49ms (Views: 5.0ms | ActiveRecord: 40.0ms)
+
+
+Started DELETE "/posts/16/likes/37" for 127.0.0.1 at 2016-05-11 17:17:27 -0700
+Processing by LikesController#destroy as JS
+  Parameters: {"post_id"=>"16", "id"=>"37"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 16]]
+  [1m[36mLike Load (0.2ms)[0m  [1mSELECT  "likes".* FROM "likes" WHERE "likes"."id" = $1 LIMIT 1[0m  [["id", 37]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "likes" WHERE "likes"."id" = $1[0m  [["id", 37]]
+  [1m[35m (1.6ms)[0m  COMMIT
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mLike Load (0.1ms)[0m  SELECT  "likes".* FROM "likes" WHERE "likes"."post_id" = $1 AND "likes"."user_id" = 1 LIMIT 1  [["post_id", 16]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "likes" WHERE "likes"."post_id" = $1[0m  [["post_id", 16]]
+  Rendered likes/_like.html.erb (3.7ms)
+  Rendered likes/destroy.js.erb (4.5ms)
+Completed 200 OK in 11ms (Views: 6.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/posts/16/edit" for 127.0.0.1 at 2016-05-11 17:17:28 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"16"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 16]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = $1 AND "posts"."id" = $2 LIMIT 1  [["user_id", 1], ["id", 16]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", "16"]]
+  [1m[35mTag Load (0.4ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."post_id" = $1  [["post_id", 16]]
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags"[0m
+  Rendered posts/_form.html.erb (263.9ms)
+  Rendered posts/edit.html.erb within layouts/application (277.0ms)
+Completed 200 OK in 344ms (Views: 336.8ms | ActiveRecord: 1.2ms)
+
+
+Started PATCH "/posts/16" for 127.0.0.1 at 2016-05-11 17:17:31 -0700
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dRdwuEM3wzGQh+7OGBr1IKSvY1S8eXersHXfOEZe8S+0JYvUXHFGU9RNo4fFuVMMUHEuyPCJDQo+Q74WaAJ4vA==", "post"=>{"title"=>"testestest2", "body"=>"fasdfdsafsdafsda", "tag_ids"=>["3", "4", "5", ""]}, "commit"=>"Update Post", "id"=>"16"}
+  [1m[35mPost Load (1.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 16]]
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (6.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."user_id" = $1 AND "posts"."id" = $2 LIMIT 1  [["user_id", 1], ["id", 16]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", "16"]]
+  [1m[35m (1.2ms)[0m  BEGIN
+  [1m[36mTag Load (39.7ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (3, 4, 5)[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."post_id" = $1  [["post_id", 16]]
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts/16
+Completed 302 Found in 57ms (ActiveRecord: 49.1ms)
+
+
+Started GET "/posts/16" for 127.0.0.1 at 2016-05-11 17:17:31 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 16]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", "16"]]
+  [1m[35mUser Load (2.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."post_id" = $1[0m  [["post_id", 16]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mLike Load (0.2ms)[0m  [1mSELECT  "likes".* FROM "likes" WHERE "likes"."post_id" = $1 AND "likes"."user_id" = 1 LIMIT 1[0m  [["post_id", 16]]
+  [1m[35m (2.2ms)[0m  SELECT COUNT(*) FROM "likes" WHERE "likes"."post_id" = $1  [["post_id", 16]]
+  Rendered likes/_like.html.erb (10.5ms)
+  [1m[36mComment Load (4.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 16]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered comments/_comment.html.erb (3.7ms)
+  Rendered posts/show.html.erb within layouts/application (34.5ms)
+Completed 200 OK in 121ms (Views: 109.2ms | ActiveRecord: 9.6ms)

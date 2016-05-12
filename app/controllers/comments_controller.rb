@@ -16,6 +16,7 @@ class CommentsController < ApplicationController
       else
         format.hmtl {render "/posts/show"}
       end
+    end
   end
 
   def destroy
@@ -24,6 +25,7 @@ class CommentsController < ApplicationController
     @comment.destroy
     respond_to do |format|
       format.html {redirect_to post_path(@post)}
+    end
   end
 
   private
