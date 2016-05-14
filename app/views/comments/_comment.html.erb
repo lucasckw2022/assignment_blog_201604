@@ -1,0 +1,6 @@
+<%= comment.body%> |
+<% if can? :destroy, comment%>
+<%= link_to "Delete", post_comment_path(@post,comment), method: :delete,  data:{confirm:"Are you sure?"}%> |
+<%end%>
+Create by: <%=comment.user.full_name if comment.user%>
+<hr>

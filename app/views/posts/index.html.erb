@@ -1,0 +1,18 @@
+<h1>All Posts</h1>
+<table>
+  <tbody>
+    <tr>
+      <td>
+        Posts
+      </td>
+        </tr>
+        <% @posts.each do |list|%>
+        <tr>
+          <td>
+          <%= link_to list.title, post_path(list) %>
+            </td>
+          </tr>
+        <%end%>
+
+  </tbody>
+</table>
